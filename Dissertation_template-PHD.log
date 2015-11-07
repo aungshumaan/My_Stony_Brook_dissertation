@@ -1,24 +1,15 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.5.27)  7 NOV 2015 13:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.28)  7 NOV 2015 14:26
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **Dissertation_template-PHD.tex
-
-(C:\Users\Aungshu\Documents\LaTex\My_Stony_Brook_dissertation\Dissertation_temp
-late-PHD.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
-File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(./Dissertation_template-PHD.tex
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 4 languages loaded.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -32,16 +23,14 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:\Users\Aungshu\AppData\Roaming\MiKTeX\2.9\tex\latex\tree-dvips\lingmacros.st
-y
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tree-dvips/lingmacros.sty
 \c@enums=\count87
 \widelabel=\dimen103
 \c@tempcnt=\count88
 \c@enumsi=\count89
 \eeindent=\dimen104
 )
-(C:\Users\Aungshu\AppData\Roaming\MiKTeX\2.9\tex\latex\tree-dvips\tree-dvips.st
-y
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tree-dvips/tree-dvips.sty
 tree-dvips version .91 of May 16, 1995
 \nodemargin=\dimen105
 \treelinewidth=\dimen106
@@ -59,28 +48,28 @@ tree-dvips version .91 of May 16, 1995
 \pos@br=\toks21
 \@arrow=\count90
 \@tempdimc=\dimen111
-) (C:\Users\Aungshu\Documents\LaTex\My_Stony_Brook_dissertation\note-defs.sty)
-(C:\Users\Aungshu\AppData\Roaming\MiKTeX\2.9\tex\latex\setspace\setspace.sty
+) (./note-defs.sty)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks22
 \ex@=\dimen112
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen113
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count91
@@ -121,8 +110,9 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(C:\Users\Aungshu\Documents\LaTex\My_Stony_Brook_dissertation\Dissertation_temp
-late-PHD.aux)
+(./Dissertation_template-PHD.aux)
+\openout1 = `Dissertation_template-PHD.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
@@ -138,23 +128,20 @@ LaTeX Font Info:    ... okay on input line 9.
  [1
 
 
-Non-PDF special ignored!{C:/Users/Aungshu/AppData/Local/MiKTeX/2.9/pdftex/confi
-g/pdftex.map}] [2] [3] [4] [5]
-(C:\Users\Aungshu\Documents\LaTex\My_Stony_Brook_dissertation\table_contents.te
-x) [6] [7] [8] [9] [10] [1]
-(C:\Users\Aungshu\Documents\LaTex\My_Stony_Brook_dissertation\object_reco.tex
-[2] [3]
+Non-PDF special ignored!{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/upd
+map/pdftex.map}] [2] [3] [4] [5] (./table_contents.tex) [6] [7] [8] [9]
+[10] [1] (./object_reco.tex [2] [3]
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ó in font cmr12!
  [4] [5]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 25.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
-
-[6]
+ [6]
 Overfull \hbox (1.81122pt too wide) in paragraph at lines 31--33
 []\OT1/cmr/m/n/12 In AT-LAS, the re-con-struc-tion of the Stand-alone, Com-bine
 d and Segment-
@@ -172,9 +159,7 @@ Overfull \hbox (17.04115pt too wide) in paragraph at lines 173--173
 s 
  []
 
-
-(C:\Users\Aungshu\Documents\LaTex\My_Stony_Brook_dissertation\object_selection.
-tex [13] [14]
+(./object_selection.tex [13] [14]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ú in font cmr12!
@@ -206,13 +191,11 @@ Missing character: There is no ù in font cmr12!
 
 Overfull \hbox (66.99644pt too wide) in paragraph at lines 18--20
 \OT1/cmr/m/n/12 calorime-ter and track iso-la-tion re-quire-ment. Calorime-ter 
-iso-la-tion $(\OML/cmm/m/it/12 E[]cone\OT1/cmr/m/n/12 30)\OML/cmm/m/it/12 =E[]
- <$\OT1/cmr/m/n/12 0.14
+iso-la-tion $^^F(\OML/cmm/m/it/12 E[]cone\OT1/cmr/m/n/12 30)\OML/cmm/m/it/12 =E
+[] <$\OT1/cmr/m/n/12 0.14
  []
 
-[16])
-(C:\Users\Aungshu\Documents\LaTex\My_Stony_Brook_dissertation\signal_bkg.tex
-[17]
+[16]) (./signal_bkg.tex [17]
 
 LaTeX Warning: Citation `TWikiReweighting' on page 18 undefined on input line 5
 .
@@ -220,8 +203,7 @@ LaTeX Warning: Citation `TWikiReweighting' on page 18 undefined on input line 5
 
 LaTeX Warning: Citation `Aad:2015gra' on page 18 undefined on input line 5.
 
-) (C:\Users\Aungshu\Documents\LaTex\My_Stony_Brook_dissertation\systematics.tex
-[18] [19] [20] [21]
+) (./systematics.tex [18] [19] [20] [21]
 Overfull \hbox (51.33295pt too wide) in paragraph at lines 38--39
 [] []\OT1/cmr/m/n/12 Generator: Take the dif-fer-ence be-tween Powheg+Herwig an
 d MC@NLO+Herwig. 
@@ -233,36 +215,35 @@ Overfull \hbox (55.8954pt too wide) in paragraph at lines 39--40
 a and Powheg+Herwig. 
  []
 
-[22]) [23] [24]
-(C:\Users\Aungshu\Documents\LaTex\My_Stony_Brook_dissertation\Dissertation_temp
-late-PHD.aux)
+[22]) [23] [24] (./Dissertation_template-PHD.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 1080 strings out of 493921
- 13715 string characters out of 3144870
- 67184 words of memory out of 3000000
- 4397 multiletter control sequences out of 15000+200000
- 9981 words of font info for 36 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 27i,5n,20p,1259b,243s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Dissertation_template-PHD.pdf (34 pages, 188268 bytes).
+ 1078 strings out of 494981
+ 12539 string characters out of 6180000
+ 66452 words of memory out of 5000000
+ 4324 multiletter control sequences out of 15000+600000
+ 9981 words of font info for 36 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 27i,5n,20p,1259b,243s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Dissertation_template-PHD.pdf (34 pages, 172360 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
+ 162 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
