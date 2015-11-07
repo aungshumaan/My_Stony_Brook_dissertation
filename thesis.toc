@@ -1,0 +1,49 @@
+\contentsline {section}{\numberline {1}Introduction}{}
+\contentsline {subsection}{\numberline {1.1}Introduction to The standard model.}{}
+\contentsline {subsection}{\numberline {1.2}Electroweak theory, symmetry breaking}{}
+\contentsline {subsection}{\numberline {1.3}pp collision}{}
+\contentsline {subsection}{\numberline {1.4}VBS process}{}
+\contentsline {subsection}{\numberline {1.5}Anomalous quartic gauge coupling}{}
+\contentsline {subsection}{\numberline {1.6}Previous measurement of aQGC}{}
+\contentsline {subsection}{\numberline {1.7}Analysis overview}{}
+\contentsline {section}{\numberline {2}Detector}{}
+\contentsline {subsection}{\numberline {2.1}LHC}{}
+\contentsline {subsection}{\numberline {2.2}ATLAS}{}
+\contentsline {subsection}{\numberline {2.3}Luminosity detectors}{}
+\contentsline {subsection}{\numberline {2.4}Inner detector}{}
+\contentsline {subsection}{\numberline {2.5}Calorimeter}{}
+\contentsline {subsection}{\numberline {2.6}Muon spectrometer}{}
+\contentsline {subsection}{\numberline {2.7}Magnet system}{}
+\contentsline {subsection}{\numberline {2.8}Trigger system}{}
+\contentsline {subsection}{\numberline {2.9}Data acquisition}{}
+\contentsline {section}{\numberline {3}Object reconstruction}{}
+\contentsline {subsection}{\numberline {3.1}Vertices and pileup}{}
+\contentsline {subsection}{\numberline {3.2}Electron}{}
+\contentsline {paragraph}{}{}
+\contentsline {subsection}{\numberline {3.3}Muon}{}
+\contentsline {subsection}{\numberline {3.4}Jets}{}
+\contentsline {subsection}{\numberline {3.5}MET}{}
+\contentsline {section}{\numberline {4}Monte Carlo generation}{}
+\contentsline {subsection}{\numberline {4.1}Generators}{}
+\contentsline {subsection}{\numberline {4.2}Matrix element, Parton showering, underlying events}{}
+\contentsline {subsection}{\numberline {4.3}Data and MC samples}{}
+\contentsline {subsection}{\numberline {4.4}Whizard}{}
+\contentsline {subsection}{\numberline {4.5}MC correction:}{}
+\contentsline {subsection}{\numberline {4.6}Pileup reweighting,vertex reweighting, energy correction, calibration}{}
+\contentsline {section}{\numberline {5}Object and Event Selection}{}
+\contentsline {subsection}{\numberline {5.1}Object selection}{}
+\contentsline {subsection}{\numberline {5.2}vertex}{}
+\contentsline {subsection}{\numberline {5.3}Electron}{}
+\contentsline {paragraph}{}{}
+\contentsline {subsection}{\numberline {5.4}Muon}{}
+\contentsline {subsection}{\numberline {5.5}Jets}{}
+\contentsline {subsection}{\numberline {5.6}MET}{}
+\contentsline {subsection}{\numberline {5.7}Event selection}{}
+\contentsline {section}{\numberline {6}Signal and background estimation}{}
+\contentsline {subsection}{\numberline {6.1}QCD fit}{}
+\contentsline {section}{\numberline {7}Systematics}{}
+\contentsline {subsection}{\numberline {7.1}JES, JER}{}
+\contentsline {subsection}{\numberline {7.2}W+jets, ttbar, QCD etc uncertainty}{}
+\contentsline {subsection}{\numberline {7.3}Signal uncertainty}{}
+\contentsline {section}{\numberline {8}Fitting procedure}{}
+\contentsline {section}{\numberline {9}Results}{}

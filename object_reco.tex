@@ -1,0 +1,102 @@
+The raw output of the detector comes in the form of hits, energy deposition, times etc. These outputs are stored in Raw Data Object files (RDO). The ATLAS detector produces a huge amount of raw data. The sheer size of the data means it is impractical to distribute the raw data widely within the collaboration. Instead additional stages of dataset is made available to the physics analyzers. Unlike RDO these datasets contain objects that we are more familiar with, like vertices, tracks, electrons, muons, jets etc. The Event Summary Data (ESD) is produced from running pattern recognition algorithm on raw data and contains detailed output of detector reconstruction. The Analysis Object Data contains summary of the reconstructed event which is sufficient for most analyses. An additional level of compression is achieved when Derived Physics Data (DPD) datasets are created from AOD for different groups of physics analysis. 
+
+\subsection{Vertices and pileup}
+In looking for interesting processes in proton-proton collision, it is important to reconstruct the interaction points, i.e. vertices. The hard interaction vertex is called the primary vertex. There may be secondary vertices in an event arising from decays and interactions of particles produced in the primary vertex.
+The reconstruction of vertices is dependent on reconstruction of charged particle tracks in the inner detector (ID). 
+The high resolution pixel detector and silicon microstrip detector (SCT) are crucial for reconstructing these tracks. Additional information is provided by the transition radiation tracker (TRT). The vertex reconstruction proceeds in two stages, i) primary vertex finding (algorithm deals with associating the tracks to a primary vertex candidate) and ii) vertex fitting (algorithm reconstructs the vertex position and calculates the covariance matrix). First, the reconstructed tracks compatible with coming from the interaction region are pre-selected. From the distribution of z co-ordinates of tracks at the point of closest approach with respect to the nominal beam spot, a global maxima is found and used as a seed for the vertex. Taking this seed and its surrounding tracks as inputs, an adaptive $\chi^{2}$-based vertex fitting algorithm is run to determine the vertex position. Each track is assigned a weight based on its compatibility with the fitted vertex position and outliers are down-weighted. Tracks that are incompatible with the vertex position by more than 7 $\sigma$ are used for fitting another vertex. This procedure is continued until the list of tracks is exhausted.  
+Secondary vertices are reconstructed using kinematic properties of the interaction likely to happen in that vertex. The displaced tracks are fitted with the secondary vertex candidate with the kinematic constraints set by, for example, the parent particle mass or the angular distribution of the daughter particles.
+\subsection{Electron}
+In ATLAS the inner detector and EM calorimeter is used for reconstructing electron objects. The inner detector tracks are matched to the energy deposits in the EM calorimeter for this purpose. The Transition Radiation Tracker (TRT) is used for electron identification. 
+\paragraph{}
+The reconstruction of electrons and photons in the region $|\eta| <$ 2.47 starts from energy deposits (clusters) in the EM calorimeter. The EM calorimeter is divided into a grid of $N_{\eta} \times N_{\phi}$ towers of size $\Delta \eta \times \Delta \phi$ = 0.025 $\times$ 0.025. Inside each of these elements, the energy of all cells in all longitudinal layers is summed to get the tower energy. A cluster is seeded by towers with total transverse energy above 2.5 GeV and then formed using a sliding-window algorithm, with a window size of 3 × 5 towers. Clusters matched to a well-reconstructed ID track originating from a vertex found in the beam interaction region are classified as electrons. 
+If the matched track is consistent with originating from a photon conversion vertex, the corresponding candidates are considered as converted photons. Clusters without matching tracks are classified as unconverted photons. 
+The electron cluster is rebuilt using 3$\times$7 and 5$\times$5 towers of longitudinal cells centered around the initial seed in the Electromagnetic Barrel (EMB) and Electromagnetic EndCap (EMEC) respectively. 
+For converted photons, the same 3$\times$7 cluster size is used in the barrel, while a 3$\times$5 cluster is used for unconverted photons due to their smaller lateral size. Similar to electron, 5$\times$5 cluster size is used in the endcap for both converted and unconverted photons. The cluster energy is then corrected by a calibration scheme based on the full detector simulation.
+\paragraph{}
+
+The relative energy resolution for these EM objects can be parameterized as follows: 
+$\sigma_{E} = \frac{a}{\sqrt{E}}\oplus \frac{b}{E}  \oplus c$, 
+where a, b and c are $\eta$-dependent parameters; a is called the sampling term, b is the noise term, and c is the constant term. The sampling term contributes mostly at low energy; its design value is (9 --10)\%/${p_{E}} $[GeV] at low $|\eta|$, and is expected to worsen as the amount of material in front of the calorimeter increases at larger $|\eta|$. The noise term is about 350$\times$cosh $\eta$ MeV for a 3$\times$7 cluster in  $\eta \times \phi$  space in the barrel and for a mean number of interactions per bunch crossing $\mu$ = 20; it is dominated by the pile-up noise at high $\eta$. At higher energies the relative energy resolution  asymptotically approaches the constant term, c, which has a design value of 0.7\%.
+
+\subsection{Muon}
+The ATLAS detector uses its Inner detector and Muon spectrometer to identify, reconstruct and precisely measure the properties of muons produced in pp collisions. 
+Muon objects are identified using available information from the ID, the MS, and the calorimeter sub-detector systems. There are a few different types of muons in ATLAS depending on the reconstruction criteria. They are:
+\begin{itemize}
+\item Stand-alone muons:  only the MS is used to reconstruct the trajectory of muons. The muon track parameters at the interaction point are determined by extrapolating the track back to the point of closest approach to the beam line, taking into account the estimated energy loss of the muon in the calorimeters. The muon has to travel through at least two layers of MS chambers to provide a track measurement. Standalone muons are mainly used to extend the acceptance to the range 2.5 $< |\eta| <$ 2.7 which is not covered by the ID. MuonBoy software package is used for this reconstruction.
+\item Combined muons: track reconstruction is preformed independently for ID and MS and a combination is done to reconstruct a combined track. This is the main reconstructed muon type. The software package used is called STACO.
+\item Segment-tagged (ST) muons: a track in the ID is classified as a muon if the extrapolated trajectory can be matched to at least one local track segment in the Monitored Drift Tube Chambers (MDT) or Cathode Strip Chambers (CSC). Segment-tagged muons can be used to increase the acceptance for muons which crossed only one layer of MS chambers. The package used for this is called MuTag. 
+\item Calorimeter-tagged (CaloTag) muons: a track in the ID is identified as a muon if it could be matched to an energy deposit in the calorimeter compatible with a minimum ionizing particle. This type of muons has the lowest purity of all the muon types but it recovers acceptance in the regions not covered by the MS. The CaloTrkMuID algorithm is used for this type.
+\end{itemize}
+
+In ATLAS, the reconstruction of the Stand-alone, Combined and Segment-tagged muons has been performed using two independent reconstruction software packages, implementing different strategies (called "chains") both for the reconstruction of muon objects in the spectrometer and for the ID-MS combination. The first chain (called STACO) does a statistical combination of the track parameters of the Stand-alone muon and ID muon tracks. The second (called MUID) performs a global refit of the muon track using the hit information from the ID and MS. A new unified chain (called "MUONS") has been developed to incorporate the best features of the two original chains. In our analysis the Staco muons have been used uniformly.
+The ID tracks used for CB, ST or CaloTag muons need to satisfy the following quality requirements:
+\begin{itemize} 
+\item at least 1 Pixel hit (nPix+nBadPix);
+\item at least 5 SCT hits (nSCT+nBadSCT);
+\item at most 2 active Pixel or SCT sensors traversed by the track but without hits;
+\end{itemize} in the region of full TRT acceptance, 0.1 $< |\eta| <$ 1.9, at least 6 TRT hits.
+(The number of hits required in the first two points is reduced by one if the track traverses a sensor known to be inefficient according to a time-dependent database). 
+
+
+
+\subsection{Jets}
+Jets are collimated shower of hadrons produced in great quantity in a hadron collider. 
+ATLAS calorimeters consist of cells which can record the signal from a particle when it traverses thorough them. The cells also record random noise from readout electronics and pileup interaction. We observe jets as a cluster of cells with energy deposition mostly in the hadronic calorimeter.
+To construct the jets we need to consider cells that have large signal over the random noise ratio (S/N).  As a first step cells with S/N greater than 4 is used as seed for a proto-cluster. All neighboring cells with S/N $>$ 2 are iteratively added to the proto-cluster.  If a cell is in the boundary of more than one proto-cluster, the proto-clusters are merged. All neighboring cells of this proto-cluster is then added irrespective of its S/N ratio.
+At this stage, Proto-clusters are split around the local maximas with energy  E$>$ 0.5 GeV greater than any of its neighboring cell. These local maxima cells are used to seed exactly one proto-cluster consisting only those cells that were part of the initial cluster. Cells that are shared by two proto-jets contribute to each according to the proto-cluster energies and distance of the cell from the proto-cluster centers.
+The resulting new proto-clusters and any original proto-clusters lacking local maxima are sorted in order of $E_{T}$ and called topological clusters. 
+
+These topological clusters then are fed to the one of the sequential recombination jet-finding algorithms.  Jet algorithms are defined by two distances,
+
+distance between two clusters, 
+\begin{equation} \label{eq:distance1}
+d_{ij} = min (k^{2p}_{Ti}, k^{2p}_{Tj}) \frac{(\Delta R)^{2}_{ij}}{R^{2}_{c}}
+\end{equation}
+distance between a cluster and beam, 
+\begin{equation} \label{eq:distance2}
+d_{ib} = k^{2p}_{Ti}
+\end{equation} 
+where 
+\begin{equation*}
+(\Delta R)^{2}_{ij} = (y_{i}-y_{j})^{2} + (\phi_{i}-\phi_{j})^{2}
+\end{equation*}
+
+and $k_{Ti}$, $y_{i}$, $\phi_{i}$ are the transverse momentum, rapidity and azimuthal angle of the i-th cluster. The variable p takes different values for different algorithms, e.g. for $k_{T}$, $anti-k_{T}$ and Cambridge-Aachen algorithms the value of p is 1,-1 and zero respectively. The current ATLAS recommendation has been to use the $anti-k_{T}$ jet algorithm. $R_{c}$ is called the characteristic radius parameter which decides the size of the eventual radius of the jet.
+
+At first, the highest $p_{T}$ cluster i is considered and the distances between it and other clusters ($d_{ij}$) and distance from the beam ($d_{ib}$) are calculated. If $d_{ij}$ is smaller than $d_{ib}$, the j-th cluster is added to the i-th cluster. This goes on till there are no cluster with distance smaller than $d_{ib}$. The jet i is then considered to be complete and removed from further consideration. The same procedure is then continued for the remaining clusters until there is none remaining.
+The p=-1 value for anti-kT algorithm means the low pT clusters have larger weightage in $d_{ij}$ and merge with the large $p_{T}$ jets before harder jets at the same distance from the i-th cluster. This ensures that the algorithm produces roughly conical-shaped jets with a soft-resilient boundary which are infra-red safe. Also eqn.~\ref{eq:distance1} and eqn.~\ref{eq:distance2} ensure that any cluster j with $(\Delta R)_{ij} < R_{c} $ is merged with cluster i, which makes the algorithm collinear-safe.
+
+The energy measurement of these topological clusters underestimate jet energy because jets have a lower detector response than electromagnetic shower objects, due mainly to the non-compensating nature of the ATLAS calorimeter. To correctly measure the jet response, cluster energies need to go through a Jet Energy Scale (JES) calibration. 
+The local cell signal weighting (LCW) method of calibrating the topological cluster jet has been used in this analysis. The LCW method classifies the topo-clusters as either electromagnetic or hadronic, based on the measured energy density and the longitudinal shower depth. Corrections are applied for calorimeter non-compensation, signal losses due to noise threshold effects, and energy losses in the non-instrumented regions close to the clusters. The LC-jet calibration is carried out in a four-step procedure in the following way.
+
+%Determination of jet calibration and energy resolution in proton-proton collisions at √ s = 8 TeV using the ATLAS detector
+%https://cds.cern.ch/record/2048678/files/ATL-COM-PHYS-2015-1086.pdf
+
+\paragraph{PileUp subtraction:}
+Energy deposit due to pileup contribution is subtracted using MC simulation. The pileup contributions are derived as a function of reconstructed number of primary vertex, $N_{PV}$ and the expected average number of interactions per branch-crossing, $\mu$ in bins of pT and $|\eta|$.
+\paragraph{Origin subtraction:}
+Keeping the jet energy unchanged the direction of jet momentum is corrected so that it points towards the primary vertex of the event instead of the center of the detector. This improves the $\eta$ resolution of the jets tremendously. 
+\paragraph{Jet calibration based on MC simulation:}
+Jet energy is calibrated by applying Jet Energy Scale (JES) derived from MC. These calibration factors are determined by spatially matching calorimeter jets to particle-level jets and then taking the ratio of the measured and true jet energies. 
+\paragraph{Residual in situ correction:}
+Finally, a global sequential calibration scheme is employed. This leaves the mean jet energy unchanged but improves the jet energy resolution and reduce the sensitivity of the response to jet flavor. 
+
+After the full calibration, the scale of the calorimeter jets built from LCW-scale topo-clusters is referred to as LCW+JES. 
+
+\subsection{MET}
+The conservation of momentum requires the total momentum in the transverse plane of the beam-pipe to be zero before and after the proton-proton collision. The unbalanced "Missing" Transverse Energy in the detector arises from particles that leave the detector without being detected. This is pertinent in our analysis because of the neutrino from the decay of W-boson which has very weak interaction with the detector material. 
+The $\met$ is calculated by the MET\_refFinal algorithm. It uses all the objects detected within the calorimeter system and also the muons detected using the inner detector and muon spectrometer. The missing transverse energy has x- and y-components, which can be written down in the form of
+\begin{equation}
+E^{missing}_{x(y)} = E^{missing, calo}_{x(y)} + E^{missing, \mu}_{x(y)}
+\end{equation}
+The $E^{missing, calo}$ terms can be calculated as negative vector sum of calorimeter objects such as electron, photon, jet, tauon and soft energy contributions. The topo-cluster energies are replaced by the calibrated object energies. Muon energy deposited in the calorimeter is subtracted to avoid double counting.
+
+The muon term is calculated as the negative sum of muon track momenta. Combined muon tracks are used for $|\eta|<$ 2.5. For 2.5$<|\eta|<$2.7 region, outside the inner detector acceptance, stand alone muons are used. 
+
+The total magnitude and azimuthal angle of the vector $\met$ are calculated as,
+\begin{equation}
+E^{missing}_{T} = \sqrt{(E^{missing}_{x})^{2} + (E^{missing}_{y})^{2}}
+\end{equation}
+\begin{equation}
+\phi^{missing} = arctan (\frac{E^{missing}_{y}}{E^{missing}_{x}})
+\end{equation}

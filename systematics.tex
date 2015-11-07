@@ -1,0 +1,54 @@
+The estimation of systematic uncertainties in an experiment is of critical importance. Unlike the statistical uncertainty which arises due to statistical fluctuation in the dataset and which can be reduced by taking more data or generating bigger MC samples, the systematic uncertainties arise from experimental biases that introduce shifts in our measurement. It is important to understand the sources of possible biases and estimate their magnitude to report a meaningful scientific statement. 
+
+The systematic sources can be divided in two classes. One is experimental systematic uncertainties which are related to uncertainties in measurement of different object in the detector. The other class is theoretical uncertainties which are related to calculation of total and differential cross-sections by Monte Carlo generators. 
+\subsection{JES}
+The biggest source of detector-related systematic uncertainties are from Jet Energy Scale and resolution uncertainties. These uncertainties affect both shape and normalization of the different templates. The uncertainty in measuring the jet energy scale is calculated by the JetUncertainty tool. We calculate the uncertainty as a function of pt and eta of jets. The latest ATLAS recommendation for jet uncertainty has been followed. The full set of nuisance parameters relating to JES uncertainties contain around 60 components. A reduced set of parameters has been used for this analysis which preserves the information on bin-by-bin correlations. The set of parameters includes
+\begin{itemize}
+\item Six nuisance parameters related to different in-situ measurements used for jet calibration.
+\item Two from $\eta$ calibration due to modelling and statistics.
+\item One from the behavior of high-$p_{T}$ jets.
+\item One from MC non-closure relative to MC12a.
+\item Four components come from Pileup related uncertainties.
+\item Flavor composition and flavor response uncertainty.
+\item Uncertainty due to close-by jets.
+\item b-jet JES response.
+\end{itemize} 
+
+These sources for JES uncertainty is treated as uncorrelated.
+\subsection{JER}
+The jet energy resolution was determined by two complementary techniques, the di-jet balance and bi-sector method. 
+%http://link.springer.com/article/10.1140/epjc/s10052-013-2306-0/fulltext.html
+The experimental uncertainty due to jet energy resolution is assessed by applying a smearing factor to the nominal jet energy and momentum so that jet resolution is increased by 1$\sigma$. This is accomplished by randomly sampling a Gaussian with width equal to the JER fractional uncertainty. This is calculated by the JetResolution tool. 
+
+\subsection{Lepton energy scale and resolution}
+Sources for lepton uncertainties include energy scale and resolution uncertainties. The official \textit{egammaAnalysisUtils} and \textit{MuonMomentumCorrections}  tools are used for this. There were also uncertainties related to the scale factors used to correct mismodelling of trigger, identification and reconstruction efficiency and isolation in the MC. %The tools \textit{MuonIsolationCorrection}, \textit{}, \textit{} are used for this.
+\subsection{$\met$ uncertainties}
+The soft terms uncertainty is calculated by the help of packages MetAnalysisCommon and MissingETUtility. There are two sets of soft term systematics. One is the global soft term systematics. These are ScaleSoftTermsUp (scales up the soft component of MET by one sigma), ScaleSoftTermsUp and ResoSoftTermsUp (smears the soft component by resolution uncertainty). The second set is called the "ptHard" uncertainties. There are six components and they are ScaleSoftTermsUp\_ptHard, ScaleSoftTermsDown\_ptHard, ResoSoftTermsUp\_ptHard, ResoSoftTermsDown\_ptHard, ResoSoftTermsUpDown\_ptHard and ResoSoftTermsDownUp\_ptHard.
+\subsection{W+jets uncertainty}
+W+jets is the biggest background in this analysis. The modelling of W+jets was done by Sherpa generator. The uncertainty due to modeling was investigated by varying different parameters of the generator.
+\begin{itemize}
+\item Factorization scale:	Two variations have been considered, in one the two times the nominal scale has been used to generate W+jets samples, in the other half the nominal scale is used to generate sample.
+\item Renormalization scale: Like factorization scale, the renormalization scale is also varied to 2 $\times$ nominal and 0.5 $\times$ nominal scale.
+\item CKKW matching scale: Sherpa employs the CKKW scheme to match the matrix element particles with the parton shower particles. The nominal CKKW scale is 20GeV. For uncertainties we have used 15 GeV and 30 GeV.
+\end{itemize}
+%\subsection{$\ttbar$ uncertainty}
+\subsection{ $t\bar{t}$ uncertainty}
+$\ttbar$ modeling is done by the Powheg generator with parton showering handled by Pythia6. The modeling uncertainty is estimated by considering the followign sources.
+\begin{itemize}
+\item Generator: Take the difference between Powheg+Herwig and MC@NLO+Herwig.
+\item Parton shower: Take the difference between Powheg+Pythia and Powheg+Herwig.
+\item Initial and final state radiation (ISR and FSR): We have used AcerMC+Pyhtia for this estimation. %need more detail
+ 
+\end{itemize}
+\subsection{QCD uncertainty}
+\subsection{Signal uncertainty}
+\subsection{b-tagging uncertainty}
+%Following the ATLAS recommendation, the multi-variate algorithm MV1 was used to tag b-jets. Each jet is assigned a MV1 weight calculated using truth information and other jet properties. For our analysis a b-tag efficiency of 85\% is used
+For all MC events, depending on whether a jet passes the MV1 weight requirement for b-tagging, a b-tag efficiency or a b-tag inefficiency scale factor was calculated which corrects for discrepancy between data and MC. To estimate the uncertainty due to b-tagging, we used the sigma of the scale factors. The uncertainty is calculated in the following way:
+\begin{itemize}
+\item Vary the b-jet efficiency SF in all $p_{T}$,$\eta$ bins up (down) by 1 sigma, at the same time vary the b-jet inefficiency SFs in all $p_{T}$,$\eta$ bins down (up) by 1 sigma. 
+\item Vary the c-jet efficiency SF in all $p_{T}$,$\eta$ bins up (down) by 1 sigma, at the same time vary the c-jet inefficiency SFs in all $p_{T}$,$\eta$ bins down (up) by 1 sigma. 
+\item Vary the mis-tag rate efficiency SF in all $p_{T}$,$\eta$ up (down) by 1 sigma, simultaneously vary the mistag rate inefficiency SF in all $p_{T}$,$\eta$ bins down (up) by 1 sigma. 
+\end{itemize}
+These three uncertainties are considered to be uncorrelated and added in quadrature to get the total uncertainty.
+ 

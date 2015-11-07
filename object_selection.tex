@@ -1,0 +1,33 @@
+\subsection{vertex} 
+The vertex with the highest sum of square of transverse momentum, $\Sigma p_{T}^{2}$, of the associated tracks is chosen as the primary vertex.
+
+\subsection{Muon}
+Muons candidates are reconstructed using the STACO algorithm using both muon spectrometer (MS) and inner detector (ID) information. It has author =6. Muons are required to have pt $>$ 15 GeV and $| \eta| <$ 2.4. To suppress non-prompt muons  coming from hadron decay, impact parameter selections were placed, $|z0sin\theta| <$ 0.5 mm.  The inner detector tracks need to satisfy the following criteria: 
+i)	Number of pixel hits + number of dead pixel sensors hits $>$ 0. 
+ii)	Number of SCT hits + number of dead SCT sensors hits $>$ 4.
+iii)	Number of pixel holes + number of SCT holes $<$ 3. For 0.1$< |\eta |<$1.9, $n_{TRT}^{hits}$ + $n_{TRT}^{outliers} >$ 5 and  $n_{TRT}^{outliers}/( n_{TRT}^{hits} + n_{TRT}^{outliers} ) <$ 0.9.
+
+A tighter muon selection is considered called the “good” muon where muons need to have $|dosig| <$ 3, calorimeter isolation $\Sigma(E_{T}cone30)/E_{T}>$ 0.07 and track isolation $\Sigma(p_{T}cone30)/E_{T}>$ 0.07.
+Standard ATLAS muon tool is used to apply corrections due to momentum scale and resolution, trigger, reconstruction, identification efficiency. The isolation scale factor is assumed to be 1.
+
+\subsection{Electron}
+Electron candidates are defined as clusters of energy deposited in the electromagnetic calorimeter associated to a track reconstructed in the Inner detector. They are required to meet the ATLAS medium++ identification criteria and to have transverse energy pt $>$ 15 GeV. They need to have author =1 or 3. They also must have $|\eta|$ $<$ 2.47, excluding the crack region between barrel and end cap of the EM calorimeter, 1.37 $< |\eta| <$ 1.52, to avoid energy mis-measurement.
+For electron there is an OTx cleaning cut that require OQ\&1446==0. 
+The OTx’s refer to the Optical Transmitters on the Liquid Argon Calorimeter. This cleaning cut removes electrons that fall inside cells with dead OTxs. To make sure the electron candidate is coming from the primary vertex,$| z0 sin \theta|$ needs to be $<$ 0.5 mm and $| \frac{d0}{\sigma_{d0}} |$ needs to be $<$ 5 .  The electron cannot be within dR =0.1 of a “good” muon (described earlier in the muon section).
+\paragraph{}
+A tighter electron selection is also considered called the “good” electrons. “Good” electrons need to satisfy all the previous requirement. In addition it needs to pass the ATLAS tight++ identification criteria. There is also calorimeter and track isolation requirement. Calorimeter isolation $\Sigma(E_{T}cone30)/E_{T} <$0.14 and track isolation $\Sigma(p_{T}cone30)/E_{T} <$0.07.
+Monte Carlo samples fail to perfectly describe energy scale and resolution, isolation, identification, reconstruction, triggering of electrons seen in data. Correction due to these are applied to electron using the standard ATLAS egammaAnalysisUtils package.
+
+
+\subsection{Jets}
+Jets are reconstructed from the topological clusters using the anti-kT algorithm with radius parameter R= 0.4. The jets need to have pt$>$ 30 GeV, $ |\eta| <$ 4.5.  To suppress pileup, for jets with pt$<50$ and $ |\eta| <$2.4, there is a jet vertex fraction (JVF) requirement. The JVF is defined as the ratio of pt associated with the tracks coming from the primary vertex to pt associated with all tracks. JVF needs to be $>$ 5 for the jet to pass. Any jet that is too close to an electron or a muon within $ \Delta R $=0.3 is removed from consideration. 
+For the analysis we used Cambridge-Aachen R = 1.2 jets with mass-drop filtering as our merged jets. The filtering parameters are $\mu_{frac}< $  0.67 and $y_{f}$  needs to be $>$ 0.09. The large-R jet needs to have pt $>$ 100GeV and $|\eta| <$ 1.2 and it is removed if it is within R=1.2 of an electron or a muon. 
+
+\subsection{MET}
+Because of the neutrino in the final state, large unbalanced "missing" momentum, $\met$, is expected 
+in the transverse plane. The ``RefFinal'' definition of MET is used in this analysis.  This definition uses the 
+sum of calorimeter energy deposits and of the pt of muons reconstructed in the inner detector or muon spectrometer.
+The estimate of the energy deposited in the calorimeter is refined by associating calorimeter energy deposits with 
+reconstructed objects (electrons, photons, jets, etc.) and replacing the calorimeter energy estimate by the 
+calibrated object pt. For the MET calculation the  MissingETUtility package has been used. 
+The smearing, energy correction, and calibration applied to the objects are propagated to the $\met$ calculation. 
