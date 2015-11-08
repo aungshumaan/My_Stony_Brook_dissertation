@@ -8,3 +8,14 @@ Previous ATLAS analyses have shown that Powheg-Pythia samples do not model exper
 %The modeling has been checked by looking at the data-MC agreement in the top-quark control regions.
 %Data-MC comparisons are shown in Figures~\ref{fig:dataMC_topCR_resolved_mp}-\ref{fig:dataMC_topCR_FJ_em}, for the top-quark control regions for the loose VBS cuts.  
 \subsection{QCD fit}
+There is a small background contribution from QCD multijet processes.  These backgrounds come primarily from jets misreconstructed as electrons,
+or from leptons originating from heavy-flavor decays inside jets. For simplicity all of these sources will be referred to as ``fake'' leptons.
+Because of the very high cross-section and low fake rate of these processes, and because of the difficulty in modeling the fake-rate, 
+this background is difficult to model with MC. Therefore, it has been estimated using a data-driven method. 
+
+A fake-lepton-enriched region can be constructed by modifying the identification criteria of the leptons, to 
+create ``bad'' lepton candidates.  Bad electrons are required to pass the medium++ requirement but fail the tight++ one. 
+For bad muons, the cut on the significance of transverse component of impact parameter, $|\dzsig|$, is inverted with 
+respect to the good muon definition, i.e. bad muons must satisify $|\dzsig|>3$. In order to improve the statistics and purity 
+of the fake-enriched region, the isolation requirements on the bad lepton  are also modified with respect to the good lepton
+definition.   We require bad leptons to have $\Sigma E_{T}$Cone30/$p_{T}$ > 0.04 and $\Sigma p_{T}$Cone30/$p_{T}$ <0.5.
