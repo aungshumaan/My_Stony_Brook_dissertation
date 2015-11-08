@@ -1,2 +1,52 @@
-\contentsline {section}{\numberline {1}Event Selection}{vi}
-\contentsline {subsection}{\numberline {1.1}electron}{vi}
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {subsection}{\numberline {1.1}Introduction to The standard model.}{2}
+\contentsline {subsection}{\numberline {1.2}Electroweak theory, symmetry breaking}{2}
+\contentsline {subsection}{\numberline {1.3}pp collision}{2}
+\contentsline {subsection}{\numberline {1.4}VBS process}{2}
+\contentsline {subsection}{\numberline {1.5}Anomalous quartic gauge coupling}{2}
+\contentsline {subsection}{\numberline {1.6}Previous measurement of aQGC}{2}
+\contentsline {subsection}{\numberline {1.7}Analysis overview}{2}
+\contentsline {section}{\numberline {2}Detector}{2}
+\contentsline {section}{\numberline {3}Object reconstruction}{2}
+\contentsline {subsection}{\numberline {3.1}Vertices and pileup}{3}
+\contentsline {subsection}{\numberline {3.2}Electron}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{5}
+\contentsline {subsection}{\numberline {3.3}Muon}{6}
+\contentsline {subsection}{\numberline {3.4}Jets}{8}
+\contentsline {paragraph}{PileUp subtraction:}{11}
+\contentsline {paragraph}{Origin subtraction:}{11}
+\contentsline {paragraph}{Jet calibration based on MC simulation:}{11}
+\contentsline {paragraph}{Residual in situ correction:}{12}
+\contentsline {subsection}{\numberline {3.5}MET}{12}
+\contentsline {section}{\numberline {4}Monte Carlo generation}{14}
+\contentsline {subsection}{\numberline {4.1}Generators}{14}
+\contentsline {subsection}{\numberline {4.2}Matrix element, Parton showering, underlying events}{14}
+\contentsline {subsection}{\numberline {4.3}Data and MC samples}{14}
+\contentsline {subsection}{\numberline {4.4}Whizard}{14}
+\contentsline {subsection}{\numberline {4.5}MC correction:}{14}
+\contentsline {subsection}{\numberline {4.6}Pileup reweighting,vertex reweighting, energy correction, calibration}{14}
+\contentsline {section}{\numberline {5}Object and Event Selection}{14}
+\contentsline {subsection}{\numberline {5.1}Object selection}{14}
+\contentsline {subsection}{\numberline {5.2}vertex}{14}
+\contentsline {subsection}{\numberline {5.3}Muon}{15}
+\contentsline {subsection}{\numberline {5.4}Electron}{15}
+\contentsline {paragraph}{}{16}
+\contentsline {subsection}{\numberline {5.5}Jets}{16}
+\contentsline {subsection}{\numberline {5.6}MET}{17}
+\contentsline {subsection}{\numberline {5.7}Event selection}{18}
+\contentsline {section}{\numberline {6}Signal and background estimation}{18}
+\contentsline {subsection}{\numberline {6.1}$t\mathaccentV {bar}016{t}$ modeling}{18}
+\contentsline {subsection}{\numberline {6.2}QCD fit}{18}
+\contentsline {section}{\numberline {7}Systematics}{19}
+\contentsline {subsection}{\numberline {7.1}JES}{20}
+\contentsline {subsection}{\numberline {7.2}JER}{21}
+\contentsline {subsection}{\numberline {7.3}Lepton energy scale and resolution}{21}
+\contentsline {subsection}{\numberline {7.4}$E_{T}^{missing}$ uncertainties}{22}
+\contentsline {subsection}{\numberline {7.5}W+jets uncertainty}{22}
+\contentsline {subsection}{\numberline {7.6} $t\mathaccentV {bar}016{t}$ uncertainty}{23}
+\contentsline {subsection}{\numberline {7.7}QCD uncertainty}{23}
+\contentsline {subsection}{\numberline {7.8}Signal uncertainty}{23}
+\contentsline {subsection}{\numberline {7.9}b-tagging uncertainty}{23}
+\contentsline {section}{\numberline {8}Fitting procedure}{24}
+\contentsline {section}{\numberline {9}Results}{24}
